@@ -1,6 +1,6 @@
 # TIC TAC TOE
 
-!note 
+
 A game of Tic Tac Toe using React and JS.
 
 ## Implemented Systems
@@ -10,3 +10,6 @@ A game of Tic Tac Toe using React and JS.
 
 ## Planned additional systems
 - Popup panel if tied.
+
+> [!NOTE]
+>  This project is intended for personal learning and portfolio only.
