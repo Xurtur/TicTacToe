@@ -80,7 +80,7 @@ export default function App() {
           reset();
         }}
       >
-        <h2>{winner} Wins!</h2>
+        <h2>{winner === "Tie" ? "Tie" : winner + " Wins!"}</h2>
       </PopUp>
     </>
   );
@@ -126,7 +126,10 @@ function Calculator(Play) {
     }
   }
 
-  return null;
+  // Check if board is full (no empty cells)
+  const hasEmpty = Play.includes("\u2060");
+
+  return hasEmpty ? null : "Tie";
 }
 
 createRoot(document.getElementById("root")).render(<App />);
